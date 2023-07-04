@@ -1,0 +1,200 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+
+.main .mheader{
+    background-color: #4bbd27;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height:fit-content;
+    color: white;
+    padding: 5px;
+}
+
+.main .mheader img{
+    width: 60px;
+    height: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+
+.main .mfirst{
+    background-image: url(../Images/main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main .mfirst .mlogo img{
+    width: 180px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.main .mfirst .mlogo h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #4bbd27;
+}
+
+.main .mfirst .mbuttons{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.main .mfirst .mbuttons button{
+    margin: 10px 30px;
+    padding: 16px 30px;
+    color: white;
+    background-color: #4bbd27;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.main .mfirst .mbuttons button:hover{
+    transform: scale(1.1);
+}
+
+.main .maboutus{
+    height: fit-content;
+    background-image: url('../Images/maboutus_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+     
+}
+
+.main .maboutus .mcontent{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 70%;
+    background-color: gray;
+    color: black;
+    background: linear-gradient(
+    114.83deg,
+    rgba(255, 255, 255, 0.5) 0.8%,
+    rgba(3, 17, 30, 0) 101.31%
+  );
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+}
+
+.main .maboutus .mcontent h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.main .maboutus .mcontent p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height:22px;
+}
+
+.main .mcontact{
+    background-color: #4bbd27;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .mcontact p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.main .mcontact .micons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main .mcontact .micons a{
+    text-decoration: none;
+    color:#4bbd27;
+    background: white;
+    margin: 20px;
+    padding: 5px 15px;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.main .mcontact .micons a:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:1055px) {
+    .main .mfirst .mbuttons{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:655px) {
+    .main .mfirst .mbuttons button{
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .main .mheader h1{
+        font-size: 24px;
+    }
+    .main .mfirst .mlogo img{
+        width: 100px;
+        height: 100px;
+    }
+    .main .mfirst .mlogo h2{
+        font-size: 24px;
+    }
+}

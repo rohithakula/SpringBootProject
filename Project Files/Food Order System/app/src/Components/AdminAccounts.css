@@ -1,0 +1,105 @@
+.adminaccounts{
+    background-image: url("../Images/admin-accounts_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 100px 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    backdrop-filter: blur(8px);
+}
+
+
+.adminaccounts h2{
+    color: white;
+    margin-top: 120px;
+    font-size: 40px;
+    background-color: #4bbd27;
+    padding: 8px 20px;
+    padding-top: 2px;
+    border-radius: 30px;
+}
+
+.adminaccounts .search{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adminaccounts .search input[type="text"]{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-right: 20px;
+}
+
+.adminaccounts .search input[type="submit"]{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #4bbd27;
+    cursor: pointer;    
+    color: white;
+}
+
+.adminaccounts .search input[type="button"]{
+    width: 120px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: #4bbd27;
+    border: none;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    border: 2px solid #4bbd27;
+}
+
+.adminaccounts .search input[type="button"]:hover{
+    color: #4bbd27;
+    background-color: white;
+    border: 2px solid #4bbd27;
+}
+
+.adminaccounts table{
+    width: 60%;
+    border-radius: 20px;
+    height: fit-content;
+    border-collapse: separate;
+    border-spacing: 20px 30px;
+    background-color: white;
+    margin-bottom: 58px;
+    margin-top: 30px;
+}
+
+.adminaccounts table th{
+    background-color: #4bbd27;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.adminaccounts table td{
+    color: #4bbd27;
+    font-size: 20px;
+}
+
+.adminaccounts table td .fa-edit{
+    color: rgb(60, 60, 196);
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.adminaccounts table td .fa-trash{
+    color: rgb(250, 82, 82);
+    cursor: pointer;
+}

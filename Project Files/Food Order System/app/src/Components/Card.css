@@ -1,0 +1,55 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgb(252, 253, 253);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px black;
+    margin: auto;
+    height: fit-content;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    margin-top: 0px;
+    color: #4bbd27;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .fa{
+    cursor: pointer;
+    margin: 5px 10px;
+}
+
+.card button{
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: orangered;
+    font-size: 20px;
+    height: fit-content;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:660px) {
+    .card{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .card{
+        width: 80%;
+    }
+}

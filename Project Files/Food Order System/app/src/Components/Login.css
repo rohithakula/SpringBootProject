@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100%;
+}
+.lmain{
+    background-image: url(../Images/login_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+.lform_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6.75% 18%;
+    background-color: #4bbd27;
+    width: 35%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px black;
+}
+
+.lform_container img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.lform_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom:20px;
+
+}
+
+.lform_container form input{
+    width: 280px;
+    padding: 13px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.lform_container form input[type="button"]{
+    width: 150px;
+    background-color: rgb(10, 70, 10);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+}
+
+.lform_container form input[type="button"]:hover{
+    background-color: rgb(79, 154, 79);
+}
+
+@media screen and (max-width:1100px) {
+    .lform_container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .lmain{
+        background-size: 180% 100%;
+        background-position: 80% 100%;
+    }
+    .lform_container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .lform_container{
+        width: 90%;
+        margin: 10% 5%;
+    }
+}

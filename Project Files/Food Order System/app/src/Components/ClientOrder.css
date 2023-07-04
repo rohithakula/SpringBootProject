@@ -1,0 +1,113 @@
+
+.cmain{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Images/customer_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.cmain .search{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cmain .search input[type="text"]{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin-right: 20px;
+}
+
+.cmain .search input[type="submit"]{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: #4bbd27;
+    cursor: pointer;    
+}
+
+.cmain .ccards{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    grid-gap: 50px 20px;
+    margin-top: 70px;
+    height: fit-content;
+}
+
+.cmain .ccontact{
+    background-color: #4bbd27;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cmain .ccontact p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.cmain .ccontact .cicons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cmain .ccontact .cicons a{
+    text-decoration: none;
+    color:#4bbd27;
+    background: white;
+    
+   margin-right: 20px;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.cmain .ccontact .cicons a:hover{
+    transform: scale(1.2);
+}
+
+.background{
+    opacity: 0.5;
+}
+
+@media screen and (max-width:1200px) {
+    .cmain .ccards{
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .cmain .ccards{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .search input[type="text"]{
+        width: 300px;
+    }
+    .cmain .ccards{
+        grid-template-columns: 100% ;
+    }
+}

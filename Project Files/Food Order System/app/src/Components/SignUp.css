@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    height: 100%;
+}
+.smain{
+    background-image: url(../Images/signup_bg.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+.sform_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50% 50%;
+    background-color: #4bbd27;
+    width: 35%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px black;
+}
+
+.sform_container img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom:10px;
+
+}
+
+form input,form textarea{
+    width: 380px;
+    padding: 13px 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+form input[type="button"]{
+    width: 150px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: rgb(10, 70, 10);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+form input[type="button"]:hover{
+    background-color: rgb(79, 154, 79);
+}
+
+@media screen and (max-width:1290px) {
+    .sform_container{
+        width: 60%;
+        margin: 2% 30%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .smain{
+        background-size: 180% 100%;
+        background-position: 20% 100%;
+    }
+    .sform_container{
+        width: 80%;
+        margin: 2% 15%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .sform_container{
+        width: 90%;
+        margin: 10% 5%;
+    }
+}

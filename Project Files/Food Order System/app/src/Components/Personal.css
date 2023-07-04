@@ -1,0 +1,123 @@
+.pmain{
+    background-image: url("../Images/personal_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pmain .details{
+    height: fit-content;
+    width: 50%;
+    background-color: #4bbd27;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.pmain .details .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-bottom: 30px;
+}
+
+.pmain .details .info h2{
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.pmain .details button{
+    border-radius: 20px;
+    width: 120px;
+    padding: 8px 15px;
+    background-color: rgb(243, 78, 78);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgb(243, 78, 78);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.pmain .details button:hover{
+    background-color: white;
+    color:rgb(243, 78, 78);
+}
+
+.pmain .ccontact{
+    background-color: #4bbd27;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pmain .ccontact p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.pmain .ccontact .cicons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pmain .ccontact .cicons a{
+    text-decoration: none;
+    color:#4bbd27;
+    background: white;
+    
+   margin-right: 20px;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.pmain .ccontact .cicons a:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:1300px) {
+    .pmain .details{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .pmain .details{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .pmain .details{
+        padding: 30px 10px;
+    }
+    .pmain .details .info{
+        justify-content: center;
+    }
+    .pmain .details .head{
+        display: none;
+    }
+}
